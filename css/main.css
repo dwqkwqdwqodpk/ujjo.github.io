@@ -262,7 +262,7 @@ body, html {
 
 .product__card {
   text-transform: uppercase;
-  background-image: url(/img/product-bg.svg);
+  background-image: url(../img/product-bg.svg);
   background-position: bottom center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -357,7 +357,7 @@ body, html {
 }
 
 .story__info {
-  background-image: url(/img/story/star.svg);
+  background-image: url(../img/story/star.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
