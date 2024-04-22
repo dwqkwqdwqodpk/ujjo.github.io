@@ -19,7 +19,7 @@
   
 }
 .footer__main {
-    background-image: url(/img/footer/footer-frame.svg);
+    background-image: url(../img/footer/footer-frame.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -32,7 +32,7 @@
 
 .footer__wrap {
     padding: clamp(0.625rem, 0.446rem + 0.89vw, 1.25rem);
-    background-image: url(/img/footer/footer-bg.svg);
+    background-image: url(../img/footer/footer-bg.svg);
     background-size: cover;
     border-right: 1px solid var(--border-color);
     border-left: 1px solid var(--border-color);
