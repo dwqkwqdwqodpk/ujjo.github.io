@@ -5,3 +5,6 @@
 
 
 Блок со story сделан не очень качественно, в частности из за того я не додумался сделать фон через border а не background image
+
+
+https://dwqkwqdwqodpk.github.io/ujjo.github.io/
