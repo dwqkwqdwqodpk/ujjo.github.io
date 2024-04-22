@@ -5,12 +5,11 @@
 
 body, html {
     font-family: 'roboto-ujjo';
-    margin-top: 1px;
 }
 
 .container {
     max-width: 1440px;
-    padding: 0 15px;
+    padding: 0 clamp(0.313rem, 0.134rem + 0.89vw, 0.938rem);
     margin: 0 auto  ;
 }
 .purple {
