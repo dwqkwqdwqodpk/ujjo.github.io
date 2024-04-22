@@ -23,7 +23,7 @@
 
 
 .benefits__info-text {
-    height: 78px;
+    height: clamp(3.125rem, 2.554rem + 2.86vw, 5.125rem);
     display: flex;
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
@@ -31,6 +31,7 @@
     overflow:hidden;
 }
 .info-text__content {
+    font-size: clamp(0.563rem, 0.42rem + 0.71vw, 1.063rem);
     position: relative;
     right: 14%;
     flex-shrink: 0;
@@ -41,22 +42,21 @@
 }
 
 .benefits__info-img {
-    padding:  20px;
+    padding:  clamp(0.313rem, 0.045rem + 1.34vw, 1.25rem);
 }
 
 .benefits__title {
     padding: 24px 80px 15px 61px;
-    font-size: 58px;
-    line-height: 65px;
+    font-size: clamp(1rem, 0.25rem + 3.75vw, 3.625rem);
+    line-height: clamp(1rem, 0.143rem + 4.29vw, 4rem);
     text-align: center;
     border-bottom: 1px solid var(--border-color);
 
     @include mediaLow {
-        padding: 0;
-        line-height: 48px;
+        padding: 15px ;
     }
 }
 
 .benefits__ben-img {
-    padding: 20px;
+    padding:clamp(0.313rem, 0.045rem + 1.34vw, 1.25rem);
 }

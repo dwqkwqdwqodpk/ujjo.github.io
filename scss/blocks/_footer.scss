@@ -1,8 +1,8 @@
 .footer__justify {
-    padding: 20px 93px;
+    padding: 20px ;
     display: flex;
     justify-content: space-between;
-    font-size: 15px;
+    font-size: clamp(0.5rem, 0.375rem + 0.63vw, 0.938rem);
     line-height: 24px;
     text-transform: uppercase;
     background-color: #CDFD3B;
@@ -24,15 +24,14 @@
     background-repeat: no-repeat;
     background-position: center center;
     text-align: center;
-    padding-bottom: 20px;
 
     & img {
-        padding: 100px;
+        padding:clamp(0.938rem, -0.58rem + 7.59vw, 6.25rem) clamp(2.5rem, -1.071rem + 17.86vw, 15rem);
     }
 }
 
 .footer__wrap {
-    padding: 20px;
+    padding: clamp(0.625rem, 0.446rem + 0.89vw, 1.25rem);
     background-image: url(/img/footer/footer-bg.svg);
     background-size: cover;
     border-right: 1px solid var(--border-color);

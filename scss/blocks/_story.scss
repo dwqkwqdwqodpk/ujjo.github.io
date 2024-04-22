@@ -1,6 +1,6 @@
 .story__pause {
     display: flex;
-    height: 78px;
+    height: clamp(3.125rem, 2.554rem + 2.86vw, 5.125rem);
     overflow: hidden;
     border-right: 1px solid var(--border-color);
     border-left: 1px solid var(--border-color);
@@ -33,7 +33,7 @@
 
     @include mediaLow {
         display: grid;
-        gap: 30px;
+        gap: 5px;
     }
 
     & img {
@@ -54,11 +54,17 @@
     border-right: 1px solid var(--border-color);
 }
 .story__title{
-    font-size: 58px;
+    font-size: clamp(1.5rem, 0.727rem + 3.86vw, 3.625rem);
     line-height: 64px;
-    padding: 53px 54px 55px 54px;
+    padding:clamp(0.313rem, -0.801rem + 5.57vw, 3.375rem) clamp(0.313rem, -0.801rem + 5.57vw, 3.375rem);
     text-transform: uppercase;
     text-align: center;
+
+    @media (max-width:500px) {
+        line-height: unset;
+    }
+
+
 }
 
 .story__info {
@@ -66,9 +72,12 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    @include mediaTablet {
-        background-size: unset;        
-        background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    @include mediaLow {
+        background-size: auto;
     }
 
 }
@@ -76,16 +85,11 @@
 
 .story__info-text {
     text-align: center;
-    padding: 150px 134px ;
-    font-size: 16px;
-    line-height: 24px;
-
-    @include mediaTablet {
-        padding: 140px 91px;
-    }
-    @include mediaLow { 
-        padding: 10% 30%;
-    }
+    padding-top: 54px;
+    padding: 0 10px;
+    font-size: clamp(0.688rem, 0.598rem + 0.45vw, 1rem);
+    line-height: clamp(0.688rem, 0.455rem + 1.16vw, 1.5rem);
+    max-width:400px;
 }
 
 .story__text-item1 {
